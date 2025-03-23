@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements and Forms</title>
+    <style>
+        /* Basic styling for the table and form */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ordered list with Roman numerals -->
+    <h2>My List</h2>
+    <ol type="I">
+        <li>Introduction</li>
+        <li>Features</li>
+        <li>How to Use</li>
+        <li>Conclusion</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Sample Image</h2>
+    <img src="https://images.pexels.com/photos/3417764/pexels-photo-3417764.jpeg" alt="Nature" width="600">
+
+    <!-- Table of 5 contacts -->
+    <h2>Contacts</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Main St, City</td>
+                <td>123-456-7890</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Oak Rd, Town</td>
+                <td>987-654-3210</td>
+                <td>janesmith@example.com</td>
+            </tr>
+            <tr>
+                <td>James Brown</td>
+                <td>789 Pine Ave, Village</td>
+                <td>555-123-4567</td>
+                <td>jamesbrown@example.com</td>
+            </tr>
+            <tr>
+                <td>Emily Davis</td>
+                <td>101 Maple Blvd, Suburb</td>
+                <td>444-321-8765</td>
+                <td>emilydavis@example.com</td>
+            </tr>
+            <tr>
+                <td>Michael Wilson</td>
+                <td>202 Cedar St, Downtown</td>
+                <td>222-333-4444</td>
+                <td>michaelwilson@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Dropdown (Select) -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="india">India</option>
+        </select>
+
+        <!-- Radio Buttons (Gender) -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+
+        <!-- Checkbox (Newsletter) -->
+        <label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            Subscribe to newsletter
+        </label>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
